@@ -27,7 +27,7 @@ ul {
 }
 
 section {
-  padding-block: 10rem;
+  padding-block: 5rem;
 }
 
 html,
@@ -294,7 +294,7 @@ body.menu-expanded button path {
 #home::before {
   content: '';
   width: 100%;
-  height: calc(150% + var(--nav-height));
+  height: calc(154% + var(--nav-height));
   background: var(--brand-light);
 
   display: block;
@@ -308,7 +308,7 @@ body.menu-expanded button path {
   display: block;
   margin-inline: auto;
   width: 26.4rem;
-  object-position: 0 2rem;
+  object-position: 0 -0.1rem;
 }
 
 #home p {
@@ -362,8 +362,21 @@ body.menu-expanded button path {
   margin-bottom: 1.6rem;
 }
 
+#services header {
+  text-align: center;
+}
+
+#services header h5 {
+  font-size: 2rem;
+  display: inline-block;
+  width: 70%;
+  color: var(--headline);
+  margin-bottom: 5rem;
+}
+
 #services header h2 {
   margin-bottom: 6rem;
+  color: var(--brand-dark);
 }
 
 #services .cards {
@@ -382,6 +395,12 @@ body.menu-expanded button path {
 
 #services .card h3 {
   margin-block: 1.6rem;
+  color: var(--brand-dark);
+}
+
+#services .button {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
 /** about *** *** ***/
@@ -506,7 +525,7 @@ footer .social-links {
   }
 
   section {
-    padding-block: 16rem;
+    padding-block: 8rem;
   }
 
   section header h2 {
@@ -643,7 +662,7 @@ footer .social-links {
 
   /** home *** **/
   #home::before {
-    height: calc(104% - var(--nav-height));
+    height: calc(110% - var(--nav-height));
   }
 
   #home {
@@ -686,12 +705,9 @@ footer .social-links {
     flex: 1;
   }
 
-  #home .button {
-    margin: 0;
-  }
-
   #home img {
     width: 42rem;
+    object-position: 0 -0.3rem;
   }
 
   /** services *** **/
@@ -709,6 +725,13 @@ footer .social-links {
   #services .card {
     width: 30%;
     flex-grow: 1;
+  }
+
+  #services .button {
+    margin-top: 10rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0rem;
   }
 
   /** about *** **/
