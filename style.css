@@ -117,7 +117,6 @@ img {
   fill: var(--brand-light);
 }
 
-#navigation .logo path[fill='#00856F'],
 #backToTopButton circle {
   fill: var(--primary-color);
 }
@@ -125,10 +124,6 @@ img {
 button.open-menu path[stroke*='#00856F'],
 #contact li path {
   stroke: var(--primary-color);
-}
-
-#navigation.scroll .logo path[fill='#00856F'] {
-  fill: #fff;
 }
 
 #navigation.scroll button.open-menu path[stroke*='#00856F'] {
@@ -154,14 +149,11 @@ nav .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow-y: hidden;
 }
 
 nav.scroll {
   background: var(--primary-color);
-}
-
-nav.scroll .logo path {
-  fill: #fff;
 }
 
 nav.scroll button path {
@@ -184,6 +176,14 @@ nav button {
 nav .menu,
 nav .close-menu {
   position: fixed;
+}
+
+#navigation a.logo {
+  margin-top: 1rem;
+}
+
+#navigation a.logo img {
+  height: 4rem;
 }
 
 /**
@@ -273,10 +273,6 @@ body.menu-expanded .logo,
 body.menu-expanded button {
   position: relative;
   z-index: 10;
-}
-
-body.menu-expanded .logo path {
-  fill: white;
 }
 
 body.menu-expanded button path {
@@ -660,9 +656,17 @@ footer .social-links {
     color: var(--primary-color);
   }
 
+  #navigation a.logo {
+    margin-top: 0.5rem;
+  }
+
+  #navigation a.logo img {
+    height: 6.5rem;
+  }
+
   /** home *** **/
   #home::before {
-    height: calc(110% - var(--nav-height));
+    height: calc(93% - var(--nav-height));
   }
 
   #home {
@@ -707,7 +711,7 @@ footer .social-links {
 
   #home img {
     width: 42rem;
-    object-position: 0 -0.3rem;
+    object-position: 0 -0.6rem;
   }
 
   /** services *** **/

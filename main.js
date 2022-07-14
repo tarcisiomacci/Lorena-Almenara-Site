@@ -31,10 +31,13 @@ function activateMenuAtCurrentSection(section) {
 
 function showNavOnScroll() {
   var myNav = document.querySelector('#navigation')
+  var myLogo = document.querySelector('.logo-img')
   if (scrollY > 0) {
     myNav.classList.add('scroll')
+    myLogo.src = './assets/logo-lorena-almenara-white.png'
   } else {
     myNav.classList.remove('scroll')
+    myLogo.src = './assets/logo-lorena-almenara.png'
   }
 }
 
@@ -47,11 +50,17 @@ function showBackToTopButtonOnScroll() {
 }
 
 function openMenu() {
+  var myLogo = document.querySelector('.logo-img')
   document.body.classList.add('menu-expanded')
+  myLogo.src = './assets/logo-lorena-almenara-white.png'
 }
 
 function closeMenu() {
   document.body.classList.remove('menu-expanded')
+  if (scrollY == 0) {
+    var myLogo = document.querySelector('.logo-img')
+    myLogo.src = './assets/logo-lorena-almenara.png'
+  }
 }
 
 ScrollReveal({
