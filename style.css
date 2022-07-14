@@ -459,12 +459,11 @@ footer {
 
 footer .logo {
   display: inline-block;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1rem;
 }
 
-footer .logo svg {
-  width: 23.6rem;
-  height: 3.1rem;
+footer .logo img {
+  height: 8rem;
 }
 
 footer .logo path {
